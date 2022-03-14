@@ -41,15 +41,15 @@ csv_devider.pyでクロップしたcsvファイルから動作推定を行う。
 
 ### その他ディレクトリ
 
-projects:実行結果の保存先
+projects:物体検出の学習パラメータの保存先(学習を行った後に自動で生成)
 
-videodatas:videoデータの格納フォルダ
+posedatas:この通りの名前で空ディレクトリを作成すれば、movencoder.pyが中にあるビデオデータを認識する。
 
 data:物体検出のための学習データセット情報が入っている
 
 datasets:物体検出の学習データセットを作るためのコードがある。voc2coco.pyやcoco2yolo.pyなど
 
-csv:骨格csvデータの保存先
+csv:骨格csvデータの保存先(csv_devider.pyを実行すると自動で生成)
 
 weights:デフォルトの物体検出用のweightやmotion_recognition用のweightが置かれている
 
