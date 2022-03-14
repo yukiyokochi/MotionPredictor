@@ -17,11 +17,11 @@
 
 ### processor.py
 
-class ImageProcessorは物体検出と姿勢推定を処理する。また、独自で骨格csv化の処理を追加した。
+class ImageProcessorは物体検出と姿勢推定を処理する。また、骨格csv化の処理を行う。
 
 ### movencorder.py
 
-実行すると指定したビデオを指定した画像サイズや明るさに変換し保存する。
+実行すると指定したビデオを指定した画像サイズ(変数sizeを設定)や明るさ(変数alphaを設定)に変換し保存する。
 
 ### csv_devider.py
 
@@ -33,7 +33,7 @@ csv_devider.pyでクロップしたcsvファイルから動作推定を行う。
 
 動作推定の学習済み重みはweights/のディレクトリ内に保存し、引用する。
 
-コードはMotionRecognitionのLSTM-Copy4.ipynbをベースに記述した。
+コードはLSTM_Experimentリポジトリに公開したコードをベースに記述した。
 
 ### video2img.py
 
@@ -45,10 +45,11 @@ projects:実行結果の保存先
 
 videodatas:videoデータの格納フォルダ
 
-data:物体検出のための学習データセット情報が入っている(詳しくは物体検出のメモへ)
+data:物体検出のための学習データセット情報が入っている
 
-datasets:物体検出の学習データセットを作るためのコードがある。voc2coco.pyやcoco2yolo.pyなど(詳しくは物体検出のメモへ)
+datasets:物体検出の学習データセットを作るためのコードがある。voc2coco.pyやcoco2yolo.pyなど
 
 csv:骨格csvデータの保存先
 
 weights:デフォルトの物体検出用のweightやmotion_recognition用のweightが置かれている
+
