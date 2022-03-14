@@ -15,19 +15,19 @@
     
 - 実行すると、物体検出と姿勢推定が行われビデオが再生される。そのビデオをoutput.aviへ保存し、骨格csvデータはcsv/のディレクトリ内に保存される。
 
-### processor.py(一部自作)
+### processor.py
 
 class ImageProcessorは物体検出と姿勢推定を処理する。また、独自で骨格csv化の処理を追加した。
 
-### movencorder.py(自作)
+### movencorder.py
 
 実行すると指定したビデオを指定した画像サイズや明るさに変換し保存する。
 
-### csv_devider.py(自作)
+### csv_devider.py
 
 csvディレクトリに保存された骨格csvデータをwidth_of_csvの長さにクロップしcsv/devided_csv/[元のcsvファイル名]/の中に保存する。
 
-### motion_predictor.py(自作)
+### motion_predictor.py
 
 csv_devider.pyでクロップしたcsvファイルから動作推定を行う。出力はsoftmax関数に食わせる前の各動作の信頼度ベクトル(csvファイル数×9)
 
@@ -35,7 +35,7 @@ csv_devider.pyでクロップしたcsvファイルから動作推定を行う。
 
 コードはMotionRecognitionのLSTM-Copy4.ipynbをベースに記述した。
 
-### video2img.py(自作)
+### video2img.py
 
 動作推定の目視によるアノテーションのために、ビデオデータをフレームカウント枚の画像へ変換する。
 
