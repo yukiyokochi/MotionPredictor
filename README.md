@@ -53,3 +53,5 @@ csv:骨格csvデータの保存先(csv_devider.pyを実行すると自動で生�
 
 weights:デフォルトの物体検出用のweightやmotion_recognition用のweightが置かれている
 
+※物体検出用の画像・アノテーションデータが含まれたディレクトリは研究室内ドライブに格納。
+https://drive.google.com/drive/folders/142Zo0TvDO9vsz6UfEtYQe7wS-4TMnOhL
